@@ -1,0 +1,66 @@
+/* Barra superior */
+.barrasuperior {
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.barrasuperior button, .formulari button {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Canviar color al passar per damunt */
+.barrasuperior button:hover, .filaB div:hover, .formulari button:hover {
+    background-color:#ccc;
+}
+
+/* Tauler + Teclat */
+.tauler {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    border-spacing: 5px;
+}
+
+.filaA, .filaB {
+    display: table-row;
+}
+
+.lletra, .tecla {
+    display: table-cell;
+    border: solid black 1px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.teclat {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Amaguem tot fins que introduïm dades*/
+.barrasuperior, .tauler, .teclat {
+    visibility: hidden;
+}
+
+/* Formulari */
+.formulari {
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.formulari input {
+    margin-top: 5px;
+    margin-bottom: 12px;
+    padding: 12px 20px;
+}
