@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="wordleIBC.css">
+
+	<!-- Icones -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>Wordle</title>
+</head>
+
+<body>
+
+	<form class="formulari" onsubmit="return false">
+		<label for="nom">Nom:</label><br>
+		<input type="text" id="nom" name="nom" value="Lluís"><br>
+		<label for="cognom">Cognom:</label><br>
+		<input type="text" id="cognom" name="cognom" value="Isern"><br>
+		<label for="correu">Correu electrònic:</label><br>
+		<input type="email" id="correu" name="correu" value="lluis@gmail.com"><br>
+		<label for="telefon">Telèfon:</label><br>
+		<input type="tel" id="telefon" name="telefon" value="987654321"><br>
+		<button id="envia">Enviar</button>
+	</form>
+	
+
+	<div class="barrasuperior">
+		<button id="stats">Stats</button>
+		<button id="reiniciar">Reiniciar</button>
+		<button id="ajuda">?</button>
+	</div>
+
+	<div class="tauler">
+		<div>
+		<div class="filaA" id="fila1">
+			<div class="lletra" id="lletra0"></div>
+			<div class="lletra" id="lletra1"></div>
+			<div class="lletra" id="lletra2"></div>
+			<div class="lletra" id="lletra3"></div>
+			<div class="lletra" id="lletra4"></div>
+		</div>
+		<div class="filaA" id="fila2">
+			<div class="lletra" id="lletra10"></div>
+			<div class="lletra" id="lletra11"></div>
+			<div class="lletra" id="lletra12"></div>
+			<div class="lletra" id="lletra13"></div>
+			<div class="lletra" id="lletra14"></div>
+		</div>
+		<div class="filaA" id="fila3">
+			<div class="lletra" id="lletra20"></div>
+			<div class="lletra" id="lletra21"></div>
+			<div class="lletra" id="lletra22"></div>
+			<div class="lletra" id="lletra23"></div>
+			<div class="lletra" id="lletra24"></div>
+		</div>
+		<div class="filaA" id="fila4">
+			<div class="lletra" id="lletra30"></div>
+			<div class="lletra" id="lletra31"></div>
+			<div class="lletra" id="lletra32"></div>
+			<div class="lletra" id="lletra33"></div>
+			<div class="lletra" id="lletra34"></div>
+		</div>
+		<div class="filaA" id="fila5">
+			<div class="lletra" id="lletra40"></div>
+			<div class="lletra" id="lletra41"></div>
+			<div class="lletra" id="lletra42"></div>
+			<div class="lletra" id="lletra43"></div>
+			<div class="lletra" id="lletra44"></div>
+		</div>
+		<div class="filaA" id="fila6">
+			<div class="lletra" id="lletra50"></div>
+			<div class="lletra" id="lletra51"></div>
+			<div class="lletra" id="lletra52"></div>
+			<div class="lletra" id="lletra53"></div>
+			<div class="lletra" id="lletra54"></div>
+		</div>
+		</div>
+	</div>
+
+	<div class="teclat">
+		<div>
+			<div class="filaB" id="fila7">
+				<div class="tecla" id="teclaq">Q</div>
+				<div class="tecla" id="teclaw">W</div>
+				<div class="tecla" id="teclae">E</div>
+				<div class="tecla" id="teclar">R</div>
+				<div class="tecla" id="teclat">T</div>
+				<div class="tecla" id="teclay">Y</div>
+				<div class="tecla" id="teclau">U</div>
+				<div class="tecla" id="teclai">I</div>
+				<div class="tecla" id="teclao">O</div>
+				<div class="tecla" id="teclap">P</div>
+			</div>
+			<div class="filaB" id="fila8">
+				<div class="tecla" id="teclaa">A</div>
+				<div class="tecla" id="teclas">S</div>
+				<div class="tecla" id="teclad">D</div>
+				<div class="tecla" id="teclaf">F</div>
+				<div class="tecla" id="teclag">G</div>
+				<div class="tecla" id="teclah">H</div>
+				<div class="tecla" id="teclaj">J</div>
+				<div class="tecla" id="teclak">K</div>
+				<div class="tecla" id="teclal">L</div>
+				<div class="tecla" id="teclactr">Ç</div>
+			</div>
+			<div class="filaB" id="fila9">
+				<div class="tecla" id="teclaenter">Enviar<br><i class="fa fa-check" aria-hidden="true"></i></div>
+				<div class="tecla" id="teclaz">Z</div>
+				<div class="tecla" id="teclax">X</div>
+				<div class="tecla" id="teclac">C</div>
+				<div class="tecla" id="teclav">V</div>
+				<div class="tecla" id="teclab">B</div>
+				<div class="tecla" id="teclan">N</div>
+				<div class="tecla" id="teclam">M</div>
+				<div class="tecla" id="teclaborrar">Borrar<br><i class="fa fa-eraser" aria-hidden="true"></i></div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script src="diccionari.js"></script>
+<script src="wordleIBC.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.min.css" rel="stylesheet">
+
+</html>
